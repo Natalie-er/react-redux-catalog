@@ -1,0 +1,16 @@
+.socials {
+    display: flex;
+    gap: 12px;
+}
+
+.socials__item {
+    transition: transform 0.2s;
+
+    &:hover {
+        transform: translateY(-3px);
+    }
+}
+
+.socials__item a {
+    display: flex;
+}

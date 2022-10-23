@@ -1,7 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 
+import localizationReducer from './localizationSlice';
+
 const store = configureStore({
-    reducer: {},
+    reducer: {
+        localization: localizationReducer,
+    },
 });
 
 export default store;

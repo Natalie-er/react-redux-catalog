@@ -1,0 +1,44 @@
+.localization {
+    position: relative;
+}
+
+.localization__list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 7px 8px 7px;
+    background-color: var(--dark-color);
+    box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.3);
+}
+
+.localization__btn {
+    --icon-size: 12px;
+
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 6px var(--size-s);
+}
+
+.localization__item {
+    border-top: 1px solid var(--blue-color-hovered);
+
+    &:first-child {
+        border: none;
+    }
+}
+
+.localization__item-content {
+    display: block;
+    width: 100%;
+    padding: 6px 3px;
+}
+
+.localization__link {
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

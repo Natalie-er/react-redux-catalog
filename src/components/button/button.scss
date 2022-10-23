@@ -1,0 +1,64 @@
+.btn {
+    --btn-main-color: var(--blue-color);
+    --btn-second-color: var(--blue-color-hovered);
+    --btn-border-size: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 40px;
+    box-shadow: inset 0 0 0 var(--btn-border-size) var(--btn-main-color);
+    border-radius: 40px;
+    background-color: var(--btn-main-color);
+    color: var(--white-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.5;
+    transition: 0.2s;
+
+    &:hover {
+        box-shadow: inset 0 0 0 var(--btn-border-size) var(--btn-second-color);
+        background-color: var(--btn-second-color);
+    }
+
+    &:focus {
+        box-shadow: inset 0 0 0 var(--btn-border-size) var(--btn-second-color);
+    }
+
+    &:disabled {
+        box-shadow: inset 0 0 0 var(--btn-border-size) var(--gray-color);
+        background-color: var(--gray-color);
+    }
+}
+
+.btn_small {
+    padding: 6px 30px;
+}
+
+.btn_outline {
+    --btn-border-size: 1px;
+    background-color: transparent;
+    color: var(--dark-color);
+
+    &:hover {
+        color: var(--white-color);
+        background-color: var(--btn-main-color);
+    }
+
+    &:focus {
+        --btn-border-size: 2px;
+    }
+
+    &:disabled {
+        background-color: transparent;
+        color: var(--gray-color);
+    }
+}
+
+.btn_gold {
+    --btn-main-color: var(--gold-color);
+    --btn-second-color: var(--gold-color);
+}
+
+.btn__icon {
+    margin-right: var(--size-s);
+}

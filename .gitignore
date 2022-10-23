@@ -11,6 +11,8 @@
 # production
 /build
 
+/public/sprite.svg
+
 # misc
 .DS_Store
 .env.local
